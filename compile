@@ -1,0 +1,3 @@
+#!/bin/bash
+
+kotlinc src/Game.kt -target=linux_x64 -output=Game

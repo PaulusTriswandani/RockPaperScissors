@@ -7,7 +7,7 @@ fun main (args: Array<String>){
 	printResult(userChoice,gameChoice)
 }
 
-fun getGameChoice(optionsParam: Array<String>) = optionsParam[Random.nextInt() % optionsParam.size]
+fun getGameChoice(optionsParam: Array<String>) = optionsParam[Random.nextInt().mod(optionsParam.size)]
 
 fun getUserChoice(optionsParam: Array<String>) : String {
 	var isValidChoice = false
